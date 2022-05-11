@@ -1,0 +1,285 @@
+.booking {
+    .item-list {
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 12px 16px;
+            border: 1px solid #691C32;
+            margin-bottom: 50px;
+            .img {
+                margin-bottom: 30px;
+                width: 100%;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .title {
+                font-weight: 600;
+                font-size: 20px;
+                color: #691C32;
+                margin-bottom: 20px;
+            }
+            .link {
+                min-width: 250px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #691C32;
+                font-weight: 500;
+                font-size: 12px;
+                color: #691C32;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                transition: all 0.5s ease;
+            }
+            .details {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                span {
+                    font-weight: 300;
+                    font-size: 12px;
+                    display: inline-flex;
+                    align-items: center;
+                    color: #691C32;
+                    margin-bottom: 20px;
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 6px;
+                    }
+                    &.ico-1 {
+                        &::before {
+                            background: url("../images/blog-icon1.svg") center no-repeat;
+                        }
+                    }
+                    &.ico-2 {
+                        &::before {
+                            background: url("../images/blog-icon2.svg") center no-repeat;
+                        }
+                    }
+                    &.ico-3 {
+                        &::before {
+                            background: url("../images/blog-icon3.svg") center no-repeat;
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin-right: 24px;
+                    }
+                }
+            }
+            .function {
+                margin-top: 6px;
+                div {
+                    margin-left: 13px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .price {
+                font-weight: 600;
+                font-size: 30px;
+                color: #691C32;
+                text-align: center;
+                margin: 30px 0;
+                span {
+                    font-weight: 300;
+                    font-size: 12px;
+                    display: block;
+                }
+            }
+            @media (max-width: 991px) {
+                margin-bottom: 40px;
+                .title {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+            &:hover {
+                .link {
+                   background: #691C32;
+                   color: #fff; 
+                }
+            }
+        }
+    }
+    .filter-row {
+        .form {
+            justify-content: center !important;
+        }
+    }
+}
+.booking-detail {
+    .function-wrap {
+        .function {
+            justify-content: space-between;
+            margin: 50px 0;
+            div {
+                border: 0;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                font-weight: 300;
+                font-size: 14px;
+                color: #000;
+                span {
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 20px;
+                    background-color: #691C32;
+                }
+                &.ico-1 {
+                    span {
+                        -webkit-mask: url(../images/func1.svg) no-repeat center;
+                        mask: url(../images/func1.svg) no-repeat center;
+                    }
+                }
+                &.ico-2 {
+                    span {
+                        -webkit-mask: url(../images/func2.svg) no-repeat center;
+                        mask: url(../images/func2.svg) no-repeat center;
+                    }
+                }
+                &.ico-3 {
+                    span {
+                        -webkit-mask: url(../images/func3.svg) no-repeat center;
+                        mask: url(../images/func3.svg) no-repeat center;
+                    }
+                }
+                &.ico-4 {
+                    span {
+                        -webkit-mask: url(../images/func4.svg) no-repeat center;
+                        mask: url(../images/func4.svg) no-repeat center;
+                    }
+                }
+                &.ico-5 {
+                    span {
+                        -webkit-mask: url(../images/func5.svg) no-repeat center;
+                        mask: url(../images/func5.svg) no-repeat center;
+                    }
+                }
+                &.ico-6 {
+                    span {
+                        -webkit-mask: url(../images/func6.svg) no-repeat center;
+                        mask: url(../images/func6.svg) no-repeat center;
+                    }
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            @media (min-width: 991px) {
+                margin: 50px auto;
+                max-width: 994px;
+            }
+            @media (max-width: 991px) {
+                margin: 20px 0;
+                div {
+                    font-size: 11px;
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            margin: 70px 0 20px;
+        }
+        @media (max-width: 540px) {
+            overflow-x: scroll;
+            
+            .function {
+                width: 520px;
+            }
+        }
+    }
+    .text {
+        margin: 50px auto;
+        max-width: 994px;
+        @media (max-width: 991px) {
+            font-size: 14px;
+            margin: 0;
+            text-align: left;
+        }
+    }
+    .reserve-block {
+        margin: 50px auto;
+        max-width: 994px;
+        padding: 50px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #691C32;
+        * {
+            color: #D6D1BB;
+        }
+        .desc {
+            font-weight: 300;
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+        .price {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+        .detail {
+            div {
+                display: flex;
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: uppercase;
+                span {
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    margin: 0 13px 13px 0;
+                    background-color: #fff;
+                }
+                &.ico-1 {
+                    span {
+                        -webkit-mask: url(../images/breakfast.svg) no-repeat center;
+                        mask: url(../images/breakfast.svg) no-repeat center;
+                    }
+                }
+                &.ico-2 {
+                    span {
+                        -webkit-mask: url(../images/info.svg) no-repeat center;
+                        mask: url(../images/info.svg) no-repeat center;
+                    }
+                }
+                &.ico-3 {
+                    span {
+                        -webkit-mask: url(../images/payment.svg) no-repeat center;
+                        mask: url(../images/payment.svg) no-repeat center;
+                    }
+                }
+            }
+        }
+        .btn {
+            background: #691C32;
+            border-color: #fff;
+            color: #fff;
+            min-width: 150px;
+            margin-top: 0;
+        }
+        @media (max-width: 991px) {
+            margin: 40px 0 0;
+            padding: 40px 20px;
+            flex-direction: column;
+            align-items: center;
+            >div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                margin-top: 20px;
+            }
+        }
+    }
+}

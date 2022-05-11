@@ -1,0 +1,157 @@
+.about {
+    .slider-block {
+        border: 0;
+        padding: 0;
+    }
+    .tns-controls {
+        position: absolute;
+        bottom: 28px;
+        left: -79%;
+        height: 80px;
+        button {
+            border-color: #BABABA;
+        }
+    }
+    .our-mission {
+        .item {
+            display: flex;
+            margin-bottom: 50px;
+            .img {
+                width: 50px;
+                height: 50px;
+                background: url("../images/mission-icon.svg") center no-repeat #691C32;
+            }
+            .content{
+                flex: 1;
+                padding-left: 23px;
+                .title {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #691c32;
+                    margin-bottom: 11px;
+                }
+                .desc {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+.basqal {
+    .nature {
+        margin-top: 62px;
+        .item {
+            .text {
+                margin-bottom: 50px;
+            }
+            .img {
+                margin-top: 50px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            margin-top: 40px;
+            .item {
+                .text {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+                .img {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .blog {
+        margin-bottom: 50px;
+        .item {
+            text-align: center;
+            margin-top: 50px;
+            img {
+                width: 100%;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 37px;
+                color: #691C32;
+                margin: 32px 0 16px;
+            }
+            .desc {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000;
+                padding: 0 55px;
+            }
+        }
+        @media (max-width: 991px) {
+            .item {
+                position: relative;
+                padding-top: 50px;
+                margin-top: 40px;
+                .title {
+                    position: absolute;
+                    width: 100%;
+                    font-size: 18px;
+                    top: 0;
+                    margin: 0;
+                    text-align: center;
+                }
+                .desc {
+                    font-size: 12px;
+                    padding: 20px 0 0;
+                }
+            }
+        }
+    }
+}
+.about-block {
+	.content {
+		height: 560px;
+		padding: 50px 32px; 
+		background: #691C32;
+		.text {
+			div {
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 17px;
+				color: #fff;
+			}
+		}
+	}
+	.img {
+		margin: -360px 32px 0;
+		img {
+			width: 100%;
+		}
+	}
+	@media (max-width: 991px) {
+		.content {
+			height: auto;
+			padding: 40px 20px 80px;
+			.block-header {
+				display: block;
+				h2 {
+					color: #fff;
+				}
+			}
+			.text {
+				height: 228px;
+    			overflow: hidden;
+				div {
+					font-size: 12px;
+				}
+			}
+		}
+		.img {
+			margin: -43px 20px 0;
+		}
+	}
+}

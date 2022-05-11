@@ -1,0 +1,413 @@
+{% extends "home_layout.html" %} {% block content %}
+<div class="home-bg">
+    <div class="img"><img src="images/home-bg.png"></div>
+</div>
+<div class="container">
+    <div class="filter-row">
+        <form action="" method="">
+            <div class="form">
+                <div class="input">
+                    <input name="date" class="datepick datepicker_dd_mm" type="text" readonly placeholder="Arrival"> 
+                </div>
+                <div class="input">
+                    <input name="date" class="datepick datepicker_dd_mm" type="text" readonly placeholder="Departure"> 
+                </div>
+                <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <div class="title"><span>Guests</span></div>
+                      <div class="content">
+                        <div class="sld">
+                            <label>Böyüklər</label>
+                            <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <div class="title"><span>Children</span></div>
+                      <div class="content">
+                          <div class="sld">
+                              <label>Uşaq sayı</label>
+                              <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+                          </div>
+                          <div class="age">
+                              <label>Uşaq yaşı</label>
+                              <div><select>{% for i in 1..9 %}<option value="{{ i }}">{{ i }}</option>{% endfor %}</select></div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <div class="title room"><span>Rooms</span></div>
+                      <div class="content">
+                          <div class="sld">
+                              <label>Otaq</label>
+                              <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="btn-wrap"><a class="btn" href="bron.html">VIEW RATES</a></div>
+            </div>
+        </form>
+    </div>
+    <div class="booking">
+        <div class="slider">
+            <div>
+                <h2 class="title">DELUXE KING ROOM</h2>
+                <a href=""><img src="images/home-slider.png"></a>
+                <div class="btn-wrap">
+                    <a class="btn" href="">ƏTRAFLI</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="title">DELUXE KING ROOM</h2>
+                <a href=""><img src="images/home-slider.png"></a>
+                <div class="btn-wrap">
+                    <a class="btn" href="">ƏTRAFLI</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="title">DELUXE KING ROOM</h2>
+                <a href=""><img src="images/home-slider.png"></a>
+                <div class="btn-wrap">
+                    <a class="btn" href="">ƏTRAFLI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="slider-block slider-type1">
+        <div class="slider">
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">DINING</h2>
+                        <img src="images/title-img.svg" class="title-img">
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/home-dining.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">DINING</h2>
+                        <img src="images/title-img.svg" class="title-img">
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/home-dining.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">DINING</h2>
+                        <img src="images/title-img.svg" class="title-img">
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/home-dining.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="my-controls">
+            <button type="button" class="prew"></button>
+            <button type="button" class="next"></button>
+        </div>
+    </div>
+    <div class="slider-block slider-type1 row-reverse">
+        <div class="slider">
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">NIYAL SPA</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/sample/spa/niyal-spa.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">NIYAL SPA</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/sample/spa/niyal-spa.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">NIYAL SPA</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/sample/spa/niyal-spa.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="my-controls">
+            <button type="button" class="prew"></button>
+            <button type="button" class="next"></button>
+        </div>
+    </div>
+    <div class="slider-block slider-type1">
+        <div class="slider">
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">ENTERTAINMENT</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/sample/entertainment/entertainment.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">ENTERTAINMENT</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/sample/entertainment/entertainment.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">ENTERTAINMENT</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/sample/entertainment/entertainment.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="my-controls">
+            <button type="button" class="prew"></button>
+            <button type="button" class="next"></button>
+        </div>
+    </div>
+    <div class="slider-block slider-type1 row-reverse">
+        <div class="slider">
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">ENTERTAINMENT</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/home-dining.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">ENTERTAINMENT</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/home-dining.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <h2 class="title">ENTERTAINMENT</h2>
+                        <div class="desc">
+                            <div>Enjoy a large variety of delicious breakfast buffets with
+                                fresh bakeries, a selection of egg, cold cuts, and hot
+                                dishes from around the world cuisines.</div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn" href="">ƏTRAFLI</a>
+                            <div class="my-controls">
+                                <button type="button" class="prew"></button>
+                                <button type="button" class="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="slider-img"><img src="images/home-dining.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="my-controls">
+            <button type="button" class="prew"></button>
+            <button type="button" class="next"></button>
+        </div>
+    </div>
+</div>
+<div class="offers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="block-header">
+                    <h2 class="title">SPECIAL OFFERS</h2>
+                </div>
+                <div class="desc">Heal, rejuvenate, cure. Eplore our lavish offers 
+                    at Basqal Wellbeing Resort.
+                </div>
+                <div class="btn-wrap"><a class="more" href="">more</a></div>
+            </div>
+            <div class="col-md-8"><img src="images/offers.png"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="region">
+        <div class="block-header">
+			<h2 class="title">BASQAL REGION</h2>
+		</div>
+        <div class="text">
+            <div>Located in the mountainous part of Azerbaijan, Ismaillli district, and surrounded by scenic forests Basqal Resort & Spa is a perfect family resort with children of all ages and without. </div>
+            <div>Situated 150 kilometers away from the capital city Baku at an altitude of 1081 meters above sea level, the area of Basqal Resort & Spa is surrounded by Shahdagh National park, natural State Reserves, and ancient historical monuments. There is so much to uncover in the Ismailli district for any kind of traveler: from hiking & trekking to visits to nearby wineries and much more.</div>
+        </div>
+        <img src="images/sample/basqal.png" alt="" title="">
+        <div class="text-center"><a class="more" href="basqal.html">more</a></div>
+    </div>
+</div>
+<div class="location">
+    <div class="maps" id="map" data-lat="40.420199065135805" data-lng="49.87461310915277"></div>
+    <div class="container">
+        <div class="contact">
+            <ul>
+                <li class="pin">Azərbaycan, İsmayıllı rayonu, Basqal kəndi</li>
+                <li class="phone">+994 55 700 07 77   /   +994 12 800 08 88</li>
+                <li class="email">info@basqalresort.az</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="covid-19">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <div class="title">COVID - 19 UPDATES</div>
+                    <div class="desc">instead of Services</div>
+                </div>
+                <div><a class="more" href="">ƏTRAFLI OXU</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

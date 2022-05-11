@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% block content %}
+<div class="page-wrapper blog">
+    <div class="block-header">
+        <div class="container">
+            <h2 class="title">BLOQLAR</h2>
+        </div>
+    </div>
+    <div class="container">
+		<div class="blog-list row" data-match-height=".item">
+			{% for i in 1..6 %}
+			<div class="col-md-4">
+				<a class="item" href="blog-etrafli.html">
+					<span class="img">
+						<img src="images/sample/blog/1.png" />
+					</span>
+					<span class="title">LOREM IPSUM</span>
+					<span class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                         industry. Lorem Ipsum has been the industry's standard dummy.</span>
+                    <span class="link"><span>ƏTRAFLI OXU</span></span>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page-wrapper booking">
+	<div class="container">
+		<div class="filter-row">
+            <form action="" method="">
+                <div class="form">
+                    <div class="input">
+                        <input name="date" class="datepick datepicker_dd_mm" type="text" readonly placeholder="Arrival"> 
+                    </div>
+                    <div class="input">
+                        <input name="date" class="datepick datepicker_dd_mm" type="text" readonly placeholder="Departure"> 
+                    </div>
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+                          <div class="title"><span>Guests</span></div>
+                          <div class="content">
+                            <div class="sld">
+                                <label>Böyüklər</label>
+                                <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+                          <div class="title"><span>Children</span></div>
+                          <div class="content">
+                              <div class="sld">
+                                  <label>Uşaq sayı</label>
+                                  <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+                              </div>
+                              <div class="age">
+                                  <label>Uşaq yaşı</label>
+                                  <div><select>{% for i in 1..9 %}<option value="{{ i }}">{{ i }}</option>{% endfor %}</select></div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+                          <div class="title room"><span>Rooms</span></div>
+                          <div class="content">
+                              <div class="sld">
+                                  <label>Otaq</label>
+                                  <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="block-header">
+            <h2 class="title">OTAĞI SEÇİN</h2>
+        </div>
+        <div class="item-list row" data-match-height=".item">
+			{% for i in 1..8 %}
+			<div class="col-md-3">
+				<a class="item" href="bron-etrafli.html">
+					<span class="img">
+						<img src="images/sample/bron/1.png" />
+					</span>
+					<span class="title">Standart room</span>
+                    <span class="details">
+                        <span class="ico-1">250 sq.ft</span>
+                        <span class="ico-2">1 room</span>
+                        <span class="ico-3">up to 3 guests</span>
+                    </span>
+                    <div class="function">
+                        <div class="drink"><span></span></div>
+                        <div class="wifi"><span></span></div>
+                        <div class="tv"><span></span></div>
+                    </div>
+                    <span class="price">150 AZN <span>1 night / 1 guests</span> </span>
+                    <span class="link"><span>ƏTRAFLI BAX</span></span>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

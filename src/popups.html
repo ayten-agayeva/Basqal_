@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page-wrapper popup-page">
+	<div class="container">
+        <button class="btn open_popup" data-target=".success_popup">Success</button>
+        <button class="btn open_popup" data-target=".alert_popup">Alert</button>
+        <button class="btn open_popup" data-target=".error_popup">Error</button>
+    </div>
+    <div class="popup success_popup">
+        <div class="popup_inner">
+            <div class="img"><img src="images/success.svg" /></div>
+            <div class="content">
+                <div class="title color-green">Yeniliklərə abunə oldunuz!</div>
+                <button class="btn close_btn">ok</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup alert_popup">
+        <div class="popup_inner">
+            <div class="img"><img src="images/alert.svg" /></div>
+            <div class="content">
+                <div class="title color-green">Bu e-poçt ünvanı artıq qeydiyyata alınıb.</div>
+                <button class="btn close_btn">ok</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup error_popup">
+        <div class="popup_inner">
+            <div class="img"><img src="images/error.svg" /></div>
+            <div class="content">
+                <div class="title color-green">E-poçt ünvanı yanlışdır.</div>
+                <button class="btn close_btn">ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

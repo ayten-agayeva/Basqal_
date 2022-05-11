@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="az">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+		<meta name="theme-color" content="#00387E" />
+		<meta property="author" content="Marcom" />
+		<title>Basqal</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"	/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+		<link href="./css/style.min.css?_t={{modified_time}}" rel="stylesheet"/>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div class="inner">
+					<div class="rs">
+						<div class="menu-popup">
+							<button class="toggle"><span>MENU</span></button>
+						</div>
+					</div>
+					<a class="logo" href="index.html"><img src="./images/logo.svg" /></a>
+					<a class="logo visible-mobile" href="index.html"><img src="./images/logo-m.svg" /></a>
+					<div class="ls">
+						<div class="weather">
+							<p class="text">12 °C</p>
+							<img src="./images/sun.svg" />
+						</div>
+						<div class="lang">
+							<img src="./images/world.svg" />
+							<span>AZ</span>
+							<div>
+								<a>EN</a>
+								<a>RU</a>
+							</div>
+						</div>
+						<button class="open-mobile-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		{% block content %}{% endblock %}
+		<footer id="footer">
+			<div class="container">
+				<div class="f-nav">
+					<a href="index.html">Ana SƏHİFƏ</a>
+					<a href="haqqimizda.html">HAQQIMIZDA</a>
+					<a href="otaqlar.html">OTAQLAR</a>
+					<a href="metbex.html">KULİNARİYA</a>
+					<a href="spa.html">Fitness və SPA</a>
+					<a href="">AYURVEDA SPA</a>
+					<a href="eylence.html">ƏYLƏNCƏLƏR</a>
+					<a href="tedbir-zali.html">TƏDBİR ZALLARI</a>
+					<a href="">XİDMƏTLƏR</a>
+					<a href="blog.html">BLOQ</a>
+				</div>
+				<div class="subscribe">
+					<form action="">
+						<input type="text" name="email" placeholder="Elektron poçt ünvanınızı daxil edin" />
+						<button class="btn">ABUNƏ OL</button>
+					</form>
+					<div class="social">
+						<a><i class="fab fa-facebook"></i></a>
+						<a><i class="fab fa-instagram"></i></a>
+						<a><i class="fab fa-linkedin-in"></i></a>
+						<a><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>All Right Reserved 2022</div>
+					<a href="qaydalar.html" class="link">Terms and Conditions</a>
+				</div>
+			</div>
+		</footer>
+		<div id="menu_popup">
+			<div class="container">
+				<div class="content">
+					<button class="back" type="button"></button>
+					<div class="ls">
+						<nav>
+							<ul>
+								<li><a href="">OVERVIEW</a></li>
+								<li><a href="otaqlar.html">ROOMS</a></li>
+								<li><a href="metbex.html">DINING</a></li>
+								<li><a href="spa.html">SPA & FITNESS</a></li>
+								<li><a href="eylence.html">ENTERTAINMENT</a></li>
+								<li><a href="tedbir-zali.html">EVENTS</a></li>
+								<li><a href="teklif.html">SPECIAL OFFERS</a></li>
+								<li><a href="">DESTINATION</a></li>
+								<li><a href="haqqimizda.html">ABOUT US</a></li>
+							</ul>
+						</nav>
+						<a href="" class="covid">COVID - 19 UPDATED</a>
+					</div>
+					<div class="rs">
+						<ul>
+							<li><a href="">About hotel</a></li>
+							<li><a href="">About Basqal</a></li>
+							<li><a href="">Values</a></li>
+							<li><a href="">Gallery</a></li>
+						</ul>
+						<div class="contact">
+							<ul>
+								<li class="pin">Basqal Village, Ismailli District, AZ3111, Azerbaijan</li>
+								<li class="phone">+994 12 585 5585</li>
+								<li class="email">info@basqalresort.az</li>
+							</ul>
+							<div class="social">
+								<a><i class="fab fa-facebook"></i></a>
+								<a><i class="fab fa-instagram"></i></a>
+								<a><i class="fab fa-linkedin-in"></i></a>
+								<a><i class="fab fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZWy2YH-P1SUd4wbCz4gteGoX3aXSd1c&amp;amp;libraries=places"></script>
+		<script src="./js/vendor.min.js?_t={{modified_time}}"></script>
+		<script src="./js/script.min.js?_t={{modified_time}}"></script>
+	</body>
+</html>

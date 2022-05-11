@@ -1,0 +1,263 @@
+.slider-block {
+    margin-bottom: 60px;
+    border: 1px solid #691C32;
+    padding: 24px 24px;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.p-0 {
+        padding: 0;
+        border: 0;
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+    }
+    &.gray-bg {
+        background: #F2F3F4;
+        border: 0;
+    }
+    .tns-outer {
+        .tns-item {
+            img {
+                width: 100%;
+            }
+            @media (max-width: 991px) {
+                height: auto!important;
+                padding-bottom: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .slider-overlay {
+        display: flex;
+        justify-content: space-between;
+        .slider-side {
+            width: calc(44%);
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 30px;
+            .title {
+                color: #691C32;
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            .title-img {
+                width: 100px;
+                margin-bottom: 30px;
+            }
+            .desc {
+                div {
+                    &:not(:first-child) {
+                        padding-top: 15px;
+                    }
+                }
+                span {
+                    display: block;
+                    padding-top: 15px;
+                    &:last-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+            .btn-wrap {
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                .btn {
+                    margin-top: 0;
+                    margin-right: 30px;
+                }
+                .my-controls {
+                    margin-left: 1px;
+                    button {
+                        &[data-controls="next"] {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .slider-img {
+            width: 55%;
+        }
+        &.with-img {
+            @media (min-width: 991px) {
+                .tns-controls {
+                    bottom: 77px;
+                }
+            }
+        }
+    }
+    &.row-reverse {
+        .slider-overlay {
+            flex-direction: row-reverse;
+            .slider-side {
+                padding-left: 30px; 
+                padding-right: 0;
+                img {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 24px 20px 0;
+        .slider-overlay {
+            flex-direction: column !important;
+            height: auto;
+            .slider-img {
+                width: 100%;
+            }
+            .slider-side {
+                width: 100%;
+                text-align: center !important;
+                padding-right: 0;
+                padding-left: 0 !important;
+                padding-bottom: 20px !important;
+                .title {
+                    margin-bottom: 20px;
+                }
+                img {
+                    margin: auto;
+                    margin-bottom: 20px !important;
+                }
+                .btn-wrap {
+                   display: none;
+                }
+            }
+            .tns-outer {
+                width: 100%;
+                .tns-controls {
+                    position: absolute;
+                    bottom: -44px;
+                    left: auto;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    &.slider-type1 {
+        .tns-controls {
+            position: absolute;
+            bottom: 115px;
+            left: -210px;
+            height: 80px;
+        }
+        @media (max-width: 991px) {
+            .btn-wrap {
+                .my-controls {
+                    display: none;
+                }
+            }
+            .slider-overlay {
+                height: auto;
+                position: relative;
+                .btn-wrap {
+                    display: flex!important;
+                    bottom: 0!important;
+                    position: absolute;
+                    width: -webkit-fill-available !important;
+                    .btn {
+                        margin: auto;
+                    }
+                }
+            }
+            >.my-controls {
+                text-align: center;
+            }
+        }
+        > .my-controls {
+            display: none;
+            @media (max-width: 991px) {
+                display: block;
+                text-align: center;
+                align-items: center;
+                .btn {
+                    width: get-vw(250px);
+                    background: #27392D;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+.home, .rooms, .offer {
+    .slider-block {
+        padding-bottom: 20px;
+        &.slider-type1 {
+            @media (max-width: 991px) {
+                > .my-controls {
+                    width: calc(100% - 30px);
+                    position: absolute;
+                    bottom: 79px;
+                }
+                .slider-overlay {
+                    padding-bottom: 113px;
+                }
+            }
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1231px) {
+            .btn-wrap {
+                .btn {
+                    min-width: 200px !important;
+                }
+            }
+            
+        }
+        @media only screen and (min-width: 480px) and (max-width: 991px) {
+            .slider-overlay {
+                padding-bottom: 130px !important;
+            }
+        }
+    }
+}
+.rooms, .dining, .spa, .entertainment, .offer, .meeting-room {
+    .slider-block {
+        &.row-reverse {
+            .slider-overlay {
+                .slider-side {
+                    text-align: right;
+                    @media (min-width: 991px) {
+                        .function {
+                            justify-content: flex-end;
+                        }
+                    }
+                    .btn-wrap {
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+.about, .dining, .spa, .entertainment, .meeting {
+    @media (max-width: 991px) {
+        .slider-block {
+            .my-controls {
+                button {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.dining, .spa, .entertainment {
+    @media (max-width: 991px) {
+        .slider-block {
+            > .my-controls {
+                bottom: 35px;
+            }
+            .slider-overlay {
+                padding-bottom: 35px;
+            }
+        }
+    }
+}
